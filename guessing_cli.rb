@@ -1,6 +1,8 @@
 # Code your solution here!
 def run_guessing_game
   num = rand(1..6)
+  input = nil 
+  until input == num 
   puts "Guess a number between 1 and 6."
   input = gets.chomp 
   if input == "exit"
@@ -9,5 +11,6 @@ def run_guessing_game
     puts "You guessed the correct number!"
   else 
     puts "The computer guessed #{num}."
+    end
   end
 end 
